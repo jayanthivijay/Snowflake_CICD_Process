@@ -12,9 +12,8 @@ on:
 
 jobs:
   deploy-snowflake-changes-job:
-    runs-on: 
-    -'self.hosted'
-    -'windows'
+    runs-on: Windows
+    
     
 
     steps:
