@@ -5,15 +5,17 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'migrations/**'
+    
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
   deploy-snowflake-changes-job:
-    runs-on: ubuntu-latest
+    runs-on: 
+    -'self.hosted'
+    -'windows'
+    
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
