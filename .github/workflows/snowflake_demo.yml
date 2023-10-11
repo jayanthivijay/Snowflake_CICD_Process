@@ -12,7 +12,7 @@ on:
 
 jobs:
   deploy-snowflake-changes-job:
-    runs-on: Windows
+    runs-on: windows-latest
     
     
 
